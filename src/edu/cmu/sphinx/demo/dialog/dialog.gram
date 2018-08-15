@@ -1,0 +1,28 @@
+#JSGF V1.0;
+
+grammar dialog;
+
+
+public <command> = <listen_command>;
+
+<listen_command> = <control_command> | <menu_command> | <display_command>;
+
+<control_command> = begin recognition|
+                    end recognition;
+
+<display_command> = what can i say |
+                    show star field |
+                    add more stars | 
+                    search wolfram alpha |
+                    show tree |
+                    show circles |
+                    display tree |
+                    go back |
+                    add reminder |
+                    remove reminder [<number>];
+
+<number> = one | two | three | four | five | six | seven | eight | nine;
+
+
+<menu_command> = back to home|
+                 return home;

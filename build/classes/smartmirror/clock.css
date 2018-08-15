@@ -1,0 +1,82 @@
+/** clock.css 
+    Created on : Feb 28, 2016, 6:29:11 PM
+    Author     : Dave
+*/
+.root {
+  -fx-background-color: transparent;
+  -fx-padding: 5;
+  -fx-background-insets: 5;
+  -fx-effect: dropshadow(three-pass-box, wheat, 10, 0, 0, 0);
+}
+
+#face {
+  -fx-fill:transparent;
+  -fx-stroke: transparent;
+  -fx-stroke-width: 5;
+  -fx-effect: dropshadow(three-pass-box, grey, 10, 0, 4, 4);
+}
+
+#brand {
+/*  -fx-font-size: 30px;*/
+  -fx-font: 14px Adam;
+  -fx-fill: linear-gradient(from 0% 0% to 100% 200%,repeat,aqua 0%,red 50%);
+  -fx-stroke: black;
+   -fx-stroke-width: 1;
+}
+#newFont{
+  -fx-font: 20px Adam;
+  -font-weight: bold;
+  -fx-fill: black;
+  -fx-stroke: black;
+  -fx-stroke-width: 1; 
+}
+#DateFont{
+  -fx-font: 10px Adam;
+  -font-weight: bold;
+  -fx-fill: black;
+  -fx-stroke: black;
+  -fx-stroke-width: 1; 
+}
+
+#hourLine {
+  -fx-stroke: white;
+  -fx-stroke-width: 3;
+  -fx-stroke-line-cap: round;
+}
+
+#minuteLine {
+  -fx-stroke: derive(white, -5%);
+  -fx-stroke-width: 3;
+  -fx-stroke-line-cap: round;
+}
+
+#secondLine {
+  -fx-stroke: derive(white, -15%);
+  -fx-stroke-width: 3;
+  -fx-stroke-line-cap: round;
+}
+
+#spindle {
+  -fx-fill: white;
+}
+
+#digitalClock {
+    -fx-font: 20px Adam;
+    -fx-font-weight: bold;
+    -fx-fill: linear-gradient(from 0% 0% to 100% 200%,repeat,aqua 0%,red 100%);
+    -fx-stroke: black;
+    -fx-stroke-width: 1;
+}
+#fancytext{
+    -fx-font: 30px Digital-7;
+    -fx-fill: red;
+    -fx-stroke: blue;
+    -fx-stroke-width: 1;
+}
+
+.tick {
+  -fx-fill: white;  
+  -fx-stroke: derive(white, -15%);
+  -fx-stroke-width: 3;
+  -fx-stroke-line-cap: round;
+}
